@@ -1,0 +1,8 @@
+To update:
+
+1. APP.vue
+2. HelloWorld.vue
+3. npm run build in the my-vue-app directory
+4. CD to backend directory
+5. compile the backend with mvn clean install
+6. run the backend with mvn spring-boot:run
