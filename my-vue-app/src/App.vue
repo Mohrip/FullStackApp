@@ -2,13 +2,13 @@
   <div id="app">
     <header>
       <img alt="Vue logo" src="./assets/logo.png">
-      <h1>Welcome to Your Customized Vue.js App</h1>
+      <h1>This is my first FullStack App </h1>
     </header>
     <main>
       <HelloWorld :msg="message"/>
       <p>Here you can add more content and components.</p>
     </main>
-    <footer>
+     <footer>
       <p>&copy; 2025 Your Company</p>
     </footer>
   </div>
@@ -58,8 +58,23 @@ export default {
 
 header {
   background-color: #42b983;
-  padding: 20px;
+  padding: 10px;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header .logo {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  margin-bottom: 10px; /* Space between the logo and the heading */
+}
+
+header h1 {
+  font-size: 24px; /* Reduced font size */
+  margin: 0;
 }
 
 main {
@@ -68,10 +83,11 @@ main {
 
 footer {
   background-color: #2c3e50;
-  padding: 10px;
+  padding: 20px; /* Increased padding */
   color: white;
-  /*position: fixed;*/
   width: 100%;
   bottom: 0;
 }
+
+
 </style>
