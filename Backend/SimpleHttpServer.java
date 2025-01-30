@@ -1,4 +1,4 @@
-package FullStackApp.Backend;
+//package FullStackApp.Backend;
 
 import com.sun.net.httpserver.HttpServer;
 import com.sun.net.httpserver.HttpHandler;
@@ -26,7 +26,7 @@ public class SimpleHttpServer {
     static class StaticFileHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
-            String filePath = "/Users/mohammed/Desktop/DEVELOPMENTS/JAVA-basics/FullStackApp/my-vue-app/dist" + (exchange.getRequestURI().getPath().equals("/") ? "/index.html" : exchange.getRequestURI().getPath());
+            String filePath = "/Users/mohammed/Desktop/FullStackApp/my-vue-app/dist" + (exchange.getRequestURI().getPath().equals("/") ? "/index.html" : exchange.getRequestURI().getPath());
             System.out.println("Serving file: " + filePath); 
             if (Files.exists(Paths.get(filePath))) {
                 byte[] fileBytes = Files.readAllBytes(Paths.get(filePath));
